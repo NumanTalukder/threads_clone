@@ -16,7 +16,7 @@ A Thread clone web application built using Next.js, Tailwind CSS, TypeScript, Mo
 
 ## Description
 
-The Thread Clone Project is a web application that aims to replicate the basic functionalities of Twitter. Users can post messages, follow other users, and engage in discussions similar to Twitter's thread format.
+The Thread Clone Project is a full-stack web application that aims to replicate all the functionalities and even more and better of the newly launched software by Meta called "Threads". Users can post messages, comment and reply comments, follow other users, create communities and invite others, and engage in discussions even better than Threads itself.
 
 ## Features
 
@@ -24,7 +24,9 @@ The Thread Clone Project is a web application that aims to replicate the basic f
 - Post and read threads.
 - Follow and unfollow other users.
 - Like and reply to threads.
+- comment and reply comment
 - Search for threads and users.
+- create communities
 
 ## Technologies
 
@@ -46,22 +48,13 @@ To run this project locally, follow the steps below:
 
 git clone https://github.com/your-username/thread-clone.git
 
-csharp
-Copy code
-
 2. Change into the project directory:
 
 cd thread-clone
 
-markdown
-Copy code
-
 3. Install the dependencies:
 
 npm install
-
-sql
-Copy code
 
 ### Configuration
 
@@ -75,17 +68,11 @@ Create a `.env.local` file in the root directory and add the following environme
 CLERK_API_KEY=your_clerk_api_key
 MONGODB_URI=your_mongodb_connection_string
 
-shell
-Copy code
-
 ### Usage
 
 Start the development server:
 
 npm run dev
-
-vbnet
-Copy code
 
 Open your browser and navigate to [http://localhost:3000](http://localhost:3000) to access the application.
 
