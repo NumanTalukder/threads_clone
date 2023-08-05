@@ -1,6 +1,6 @@
 import Link from 'next/link'
 import Image from 'next/image'
-import { SignOutButton, SignedIn } from '@clerk/nextjs'
+import { OrganizationSwitcher, SignOutButton, SignedIn } from '@clerk/nextjs'
 
 const TopBar = () => {
   return (
@@ -16,7 +16,7 @@ const TopBar = () => {
             <SignOutButton>
               <div className='flex cursor-pointer'>
                 <Image
-                  src='/assets/logout'
+                  src='/assets/logout.svg'
                   alt='logout'
                   width={24}
                   height={24}
@@ -25,6 +25,14 @@ const TopBar = () => {
             </SignOutButton>
           </SignedIn>
         </div>
+
+        <OrganizationSwitcher
+          appearance={{
+            elements: {
+              OrganizationSwitcherTrigger: 'py-2 px-4',
+            },
+          }}
+        />
       </div>
     </nav>
   )
